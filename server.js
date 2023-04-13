@@ -6,6 +6,10 @@ const app = express();
 
 app.use(router)
 
+app.use((req, res) => {
+    res.status(404).send("404 Not Found")
+})
+
 app.set('port', process.env.port || 7777);
 
 const server = app.listen(app.get('port'), function (err) {
