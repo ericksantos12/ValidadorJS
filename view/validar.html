@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="shortcut icon" href="images/server" type="image/svg+xml">
+    <title>Validar</title>
+</head>
+<body>
+    <main class="container">
+
+        <div class="center">
+            <h2>Página de Validação</h2>
+        </div>
+
+        <div class="center">
+            <img id="imagem" src="./images/botao" width="300px" style="margin-bottom: 50px;">
+        </div>
+
+        <article>
+            <h2>texto.md HTTP Status Code: <span id="statusCode">000</span></h2>
+        </article>
+
+
+        <script>
+            fetch("/texto")
+                .then(res => res.status)
+                .then(status => {
+                    const statusCode = document.querySelector("#statusCode")
+                    const imagem = document.querySelector("#imagem")
+
+                    statusCode.innerHTML = status
+
+                    if(status == 200){
+                        imagem.setAttribute("src", "./images/botao")
+                        statusCode.style.color = "#77f071"
+                    } else{
+                        imagem.setAttribute("src", "./images/noRoute")
+                        statusCode.style.color = "#f27961"
+                    }
+
+                });
+                
+        </script>
+
+        <br>
+        <br>
+
+        <a href="./" role="button" class="contrast outline">Voltar</a>
+        
+    </main>
+</body>
+</html>

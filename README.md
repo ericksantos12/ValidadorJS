@@ -1,13 +1,43 @@
-- Em grupo de até 3 pessoas. 
-- Deve ser desenvolvido em programação node.js (podendo utilizar framework express.js apenas como opcional).
-- O grupo deve montar um sistema web que monte um webserver na porta 4250 e caso esteja ocupada utilize a porta de segurança 7777.
-- O sistema deve apresentar 5 sites (sendo o principal chamado index.html)
-- Caso não encontre a URL solicitada, apresentar a pagina de erro 404.
-- Todos os arquivos de templates devem estar no diretorio chamado "View"
-- No projeto, deve existir um diretório chamado "entrada" no qual qualquer usuário pode inserir um arquivo chamado "texto.md" e acessando os caminhos:
+<div align=center>
+    <h1>🖥️ ValidaJS</h1>
+</div>
 
-    - "http://localhost:4250/entrada/" leia o arquivo e mostre no site o texto contido no arquivo. 
-    - "http://localhost:4250/links/" leia o arquivo e demonstre todos os links deste arquivo. Caso o arquivo não apresente nenhum link mostre a mensagem "Arquivo não apresenta link de URL". 
-    - "http://localhost:4250/validar/" leia o arquivo e demonstre o status code HTTP 200 ou 404.
+<br>
 
-- O modelo do arquivo é o mesmo adotado no projeto 01.
+## 📑 Descrição de Projeto 
+
+<br>
+
+> Programa desenvolvido em node.js e utilizando a framework express.js. O código monta um sistema web integrado com um webserver que tenha a porta 4250 como default, caso ela esteja ocupada será utilizada a porta de segurança 7777. No projeto, exite um diretório "entrada" no qual qualquer usuário pode inserir um arquivo chamado "texto.md".
+
+<br>
+
+---
+
+## 🌐 WEB
+
+<div align='center'>
+
+</div>
+
+---
+
+<br>
+
+## 👩‍💻 Equipe de Projeto
+
+<br>
+<br>
+
+<div align='center'>
+    <table>
+        <tr>
+            <td align="center"><a href="https://github.com/ericksantos12"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/16109127?v=4" width="100px;" alt=""/><br /><sub><b>Erick Sousa Santos</b></sub></td>
+            <td align="center"><a href="https://github.com/GabrielleCGNeves"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/88461057?s=400&u=d148cb506637e2afcd620fdda3a1ff4998ff9dde&v=4" width="100px;" alt=""/><br /><sub><b>Gabrielle Carvalho G Neves</b></sub></td>
+            <td align="center"><a href="https://github.com/Guilherme-Soares-Sousa2"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/100250394?v=4" width="100px;" alt=""/><br /><sub><b>Guilherme Soares de Sousa</b></sub></td>
+        </tr>
+    </table>
+<div>
+<br>
+
+---

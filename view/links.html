@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="shortcut icon" href="images/server" type="image/svg+xml">
+    <title>Links</title>
+</head>
+<body>
+    <main class="container">
+
+        <div class="center">
+            <h2>Links Extraído do Texto</h2>
+        </div>
+
+        <div class="center">
+            <img src="./images/search" width="300px" style="margin-bottom: 50px;">
+        </div>
+
+        <details>
+            <summary>Clique para visualizar os links encontrados</summary>
+            <p id="texto">...</p>
+        </details>
+
+        <br>
+        <br>
+
+        <a href="./" role="button" class="contrast outline">Voltar</a>
+        
+    </main>
+</body>
+
+<script>
+const regexp = /\bhttps?:\/\/\S+/g
+
+fetch("./texto")
+  .then(res => res.text())
+  .then(text => {
+    const links = [...text.matchAll(regexp)]
+
+    if (links == "") {
+        document.querySelector("#texto").innerHTML = "Nenhum link encontrado"
+        
+    } else {
+        document.querySelector("#texto").innerHTML = links.join("<br>")
+    }
+  })
+
+</script>
+</html>
