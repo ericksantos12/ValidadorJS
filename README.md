@@ -17,13 +17,13 @@
 ## 🌐 WEB
 
 <div align='center'>
-    <img src="https://media.discordapp.net/attachments/945711063624740874/1096906094032465992/image.png?width=625&height=662" width="300px">
-    <img src="https://media.discordapp.net/attachments/945711063624740874/1096906094405767258/image.png?width=900&height=538" width="400px">
+    <img src="https://media.discordapp.net/attachments/945711063624740874/1096906094032465992/image.png?width=625&height=662">
+    <img src="https://media.discordapp.net/attachments/945711063624740874/1096906094405767258/image.png?width=900&height=538">
 </div>
 
 <div align='center'>
-    <img src="https://media.discordapp.net/attachments/945711063624740874/1096906094766469182/image.png?width=900&height=457" width="350px">
-    <img src="https://media.discordapp.net/attachments/945711063624740874/1096906095051677757/image.png?width=900&height=560" width="350px">
+    <img src="https://media.discordapp.net/attachments/945711063624740874/1096906094766469182/image.png?width=900&height=457">
+    <img src="https://media.discordapp.net/attachments/945711063624740874/1096906095051677757/image.png?width=900&height=560">
 </div>
 
 ---
